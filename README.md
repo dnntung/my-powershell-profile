@@ -1,8 +1,9 @@
-# MY OH-MY-POSH THEME
+# MY PWSH PROFILE
+> This include autosuggestion and omp, customized for personal hobby
 
-- Download and copy the json file to OMP's themes folder
-- Import to pwsh $PROFILE:
+- Download then put `*.ps1` and `.omp.json` file into `~/.config/powershell` folder
+- Add some code in $PROFILE and save it:
 ```powershell
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme ~/.oh-my-posh/themes/touri-nomi.omp.json
+. $env:USERPROFILE\.config\powershell\touri_pwsh_profile.ps1
 ```
+- Restart the shell by typing in `. $PROFILE`
